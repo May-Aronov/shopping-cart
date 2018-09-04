@@ -44,6 +44,14 @@
       <p>Total: $<span class="total">0</span></p>
       <button type="button" class="btn clear-cart">Clear Cart</button>
     </div>
+    <script id="cart-template" type="text/x-handlebars-template">
+      <ul>
+        {{#each cart}}
+          <li>{{ Name}} - {{Price}}</li>
+        {{/each}}
+
+      </ul>
+    </script>
 
 
     <div class="row">
